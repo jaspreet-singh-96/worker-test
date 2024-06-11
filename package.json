@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^0.14.2",
+    "@scalar/hono-api-reference": "^0.5.62",
+    "hono": "^4.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.4.3",
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "vitest": "1.5.0",
+    "wrangler": "^3.57.2"
+  }
+}
